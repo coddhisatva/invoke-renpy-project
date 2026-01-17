@@ -14,6 +14,7 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
+    play music "habahaba.mp3" 
     scene bg room
 
     # This shows a character sprite. A placeholder is used, but you can
@@ -24,7 +25,7 @@ label start:
 
     # These display lines of dialogue.
 
-    e "You've created a new Ren'Py game."
+    e "TEST"
 
     e "Once you add a story, pictures, and music, you can release it to the world!"
 
