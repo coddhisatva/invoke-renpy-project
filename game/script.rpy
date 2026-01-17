@@ -5,7 +5,6 @@
 
 define e = Character("Eileen")
 
-
 # The game starts here.
 
 label start:
@@ -17,6 +16,11 @@ label start:
     play music "habahaba.mp3" 
     scene bg room
 
+    python:
+        name = renpy.input("Input your name")
+
+        name = name.strip() or "Guy Shy"
+
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
@@ -25,7 +29,15 @@ label start:
 
     # These display lines of dialogue.
 
-    e "TEST"
+    "I wake up and it's a day like any other."
+
+    "But there's something of an energy in the air..."
+
+    "I have a good feeling about today. I'm putting myself out there. So I must, at least..."
+
+    "Make progres..."
+
+    e "[name]! "
 
     e "Once you add a story, pictures, and music, you can release it to the world!"
 
